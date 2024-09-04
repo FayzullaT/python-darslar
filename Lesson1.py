@@ -25,34 +25,35 @@
 # for buyum in bozorlik:
 #     if buyum not in mahsulotlar:
 #         print(f"Iltimos, do'koningizga {buyum} ham olibkeling")
+# from lib2to3.fixer_util import String
 
 # NESTING
-car0 = {
-    'model':'lacetty',
-    'rang' : 'oq',
-    'yil':2018,
-    'narh':13000,
-    'km':50000,
-    'korobka':'avtomat'
-}
-
-car1 = {
-    'model':'nexia3',
-    'rang' : 'qora',
-    'yil':2015,
-    'narh':9000,
-    'km':89000,
-    'korobka':'mexanik'
-}
-
-car2 = {
-    'model':'gentra',
-    'rang' : 'qizil',
-    'yil':2019,
-    'narh':11000,
-    'km':8900,
-    'korobka':'mexanik'
-}
+# car0 = {
+#     'model':'lacetty',
+#     'rang' : 'oq',
+#     'yil':2018,
+#     'narh':13000,
+#     'km':50000,
+#     'korobka':'avtomat'
+# }
+#
+# car1 = {
+#     'model':'nexia3',
+#     'rang' : 'qora',
+#     'yil':2015,
+#     'narh':9000,
+#     'km':89000,
+#     'korobka':'mexanik'
+# }
+#
+# car2 = {
+#     'model':'gentra',
+#     'rang' : 'qizil',
+#     'yil':2019,
+#     'narh':11000,
+#     'km':8900,
+#     'korobka':'mexanik'
+# }
 
 # car = car1
 # print(f"{car['model'].title()},"
@@ -68,30 +69,98 @@ car2 = {
 #           )
 # print(cars[0]['model'])
 
-malibus =[]
-for n in range(10):
-    malibu={
-        'model':'malibu',
-        'rang':None,
-        'yil':2020,
-        'narh':None,
-        'km':0,
-        'korobka':'avto'
-    }
-    malibus.append(malibu)
+# malibus =[]
+# for n in range(10):
+#     malibu={
+#         'model':'malibu',
+#         'rang':None,
+#         'yil':2020,
+#         'narh':None,
+#         'km':0,
+#         'korobka':'avto'
+#     }
+#     malibus.append(malibu)
+#
+# for malibu in malibus[:3]:
+#     malibu['rang'] = 'qizil'
+#
+# for malibu in malibus[3:6]:
+#     malibu['rang'] = 'qora'
+#
+# for malibu in malibus[6:]:
+#     malibu['rang'] = 'sariq'
+#     malibu['korobka'] = 'mexanik'
+#
+# for malibu in malibus:
+#     if malibu['korobka']=='avto':
+#         malibu['narh']=4000
+#     else: malibu['narh']=3500
+# print(malibus).
+# WHILE
 
-for malibu in malibus[:3]:
-    malibu['rang'] = 'qizil'
+# son = 1
+# while son<=5:
+#     print(son, end=" ")
+#     son+=1
+# print('Tamom')
 
-for malibu in malibus[3:6]:
-    malibu['rang'] = 'qora'
+# print('Kiritilgan sonni kvadratini qaytaruvchi dastur')
+# savol = 'Istalgan sonni kiriting'
+# savol += "(dasturni tuxtatish uchun 'exit' deb yozing"
+# qiymat = ''
+# flag = True
+# while flag:
+#     qiymat=input(savol)
+#     #  if type(qiymat)=='str':
+#     #      qiymat=qiymat.lower()
+#     # print(type(qiymat))
+#     if qiymat=='exit':
+#         flag = False
+#     else:
+#         print(float(qiymat)**2)
+# print('Tamom')
 
-for malibu in malibus[6:]:
-    malibu['rang'] = 'sariq'
-    malibu['korobka'] = 'mexanik'
+# sonlar = list(range(1,11))
+# for son in sonlar:
+#     if son ==5:
+#         print('Keyingi')
+#         # break
+#         continue
+#     else:
+#         print (f"{son} ni kvadrati {son**2} ga teng")
+# order = []
+# while True :
+#     key = input('Buyurtma berasizmi? (ha/yo\'q)')
+#     if key =='ha':
+#         m = input('Nima buyurasiz?')
+#         order.append(m)
+#     elif key=="yo'q":
+#         i=1
+#         print('Buyurtmangiz:')
+#         for a in order:
+#             print(f'{i}-{a}')
+#             i+=1
+#         # print(f'Buyurtmangiz: {order}')
+#         break
+# goods = {}
+# while True:
+#     key = input('Buyurtma berasizmi? (ha/yo\'q)')
+#     if key == 'ha':
+#         good = input("Mahsulot nomi - ")
+#         cost = input("Narhi - ")
+#         goods[good] = int(cost)
+#     elif key == "y'oq":
+#         break
+#
+# for good, cost in goods.items():
+#     print(f"Mahsulot: {good.title()} - {cost} so'm")
+#
+# for good in order:
+#     if good in goods:
+#         print(f"Mahsulot: {good.title()} - {goods[good]} so'm")
+#     elif good not in goods:
+#         print(f"{good.title()} - mavjud emas")
+#
+#
 
-for malibu in malibus:
-    if malibu['korobka']=='avto':
-        malibu['narh']=4000
-    else: malibu['narh']=3500
-print(malibus)
+
